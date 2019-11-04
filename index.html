@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Shopping cart</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand shopping-title" href="#">Shopping Card</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                </li>
+            </ul>
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Account
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button">Profile</button>
+                    <button class="dropdown-item" type="button">Setting</button>
+                    <button class="dropdown-item" type="button">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Adding in the previous and next controls-->
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="/home/samira/Desktop/Work_DOC/shopping_cart/img2.png " alt="First slide"
+                    width="1502px" height="500px">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/home/samira/Desktop/Work_DOC/shopping_cart/img1.jpg" alt="Second slide"
+                    width="1502px" height="500px">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/home/samira/Desktop/Work_DOC/shopping_cart/img3.jpg" alt="Third slide"
+                    width="1502px" height="500px">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col bor">
+                <nav class="navbar total-nav navbar-dark bg-dark justify-content-start">
+                    <a class="navbar-brand" href="#">Shopping Bag Total: <span class="total">0</span> €</a>
+                </nav>
+            </div>
+            <div class="container">
+
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <i class="fas fa-times"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="col-auto">
+                        <img class="d w-100" src="/home/samira/Desktop/Work_DOC/shopping_cart/parf1.png"
+                            width="40px" height="300px">
+                    </div>
+                    <div class="col-auto">
+                        <h5>Olympéa
+                        </h5>
+                    </div>
+                    <div class="col-auto icons">
+                        <i class="fas fa-plus-circle"></i>
+                        <p class='nombre'>0</p>
+                        <i class="fas fa-minus-circle"></i>
+                    </div>
+                    <div class="col-auto">
+                        107 €
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <i class="fas fa-times"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="col-auto">
+                        <img class="d-block w-100" src="/home/samira/Desktop/Work_DOC/shopping_cart/parf2.png"
+                            width="40px" height="300px">
+                    </div>
+                    <div class="col-auto">
+                        <h5>
+                            Lady Million
+                        </h5>
+                    </div>
+                    <div class="col-auto icons">
+                        <i class="fas fa-plus-circle"></i>
+                        <p class='nombre'>0</p>
+                        <i class="fas fa-minus-circle"></i>
+                    </div>
+                    <div class="col-auto ">
+                        110 €
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-auto ">
+                        <i class="fas fa-times"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="col-auto">
+                        <img class="d-block w-100" src="/home/samira/Desktop/Work_DOC/shopping_cart/parf3.png"
+                            width="40px" height="300px">
+                    </div>
+                    <div class="col-auto ">
+                        <h5>
+                            Black XS
+                        </h5>
+                    </div>
+                    <div class=" col-auto icons">
+                        <i class="fas fa-plus-circle"></i>
+                        <p class='nombre'>0</p>
+                        <i class="fas fa-minus-circle"></i>
+                    </div>
+                    <div class="col-auto">
+                        115 €
+                    </div>
+                </div>
+            </div>
+
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://kit.fontawesome.com/ced391cba6.js" crossorigin="anonymous"></script>
+            <script async type="text/javascript" src="file.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+
+</body>
+
+</html>
